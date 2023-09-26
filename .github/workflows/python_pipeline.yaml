@@ -1,0 +1,12 @@
+name: Go Directory Workflow
+on:
+  push:
+    paths:
+      - 'python_project/**' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo Go Code is Running
+      run: echo "Running Go code..."
